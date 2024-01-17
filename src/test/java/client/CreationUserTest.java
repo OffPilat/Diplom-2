@@ -5,6 +5,7 @@ import constants.Api;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import jdk.jfr.Description;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,17 +21,15 @@ public class CreationUserTest {
     @Description("Проверка работы API по созданию пользователей")
     @Test
     public void createUserTest() {
-        userClient.createUser();
-        userClient.deleteUser();
+        userClient.successfulCreationUserWithBodyCheck();
     }
 
     @DisplayName("Тест на проверку API по созданию уже существующего пользователя")
     @Description("Проверка работы API по созданию пользователей")
     @Test
     public void createExistUserTest() {
-        userClient.createUser();
+        userClient.successfulCreationUserWithBodyCheck();
         userClient.createExistUser();
-        userClient.deleteUser();
     }
 
     @DisplayName("Тест на проверку API по созданию пользователя без обязательно заполненного поля")
@@ -40,5 +39,8 @@ public class CreationUserTest {
         userClient.createUserWithoutMandatoryField();
     }
 
-
+    @After
+    public void deleteUser() {
+        userClient.deleteUser();
+            }
 }

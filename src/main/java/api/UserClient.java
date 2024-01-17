@@ -17,8 +17,8 @@ public class UserClient {
     private static final File loginInvalidUser = new File("src/test/java/resources/loginInvalidUser.json");
     private static final File editUser = new File("src/test/java/resources/editUser.json");
 
-    @Step("Создание пользователя")
-    public void createUser() {
+    @Step("Успешное создание пользователя")
+    public void successfulCreationUserWithBodyCheck() {
         given()
                 .contentType(ContentType.CONTENT_TYPE)
                 .body(createUser)
@@ -111,11 +111,12 @@ public class UserClient {
                 .post(Api.LOGIN_USER)
                 .then()
                 .extract().body().path("accessToken");
+        if (Authorization.ACCESS_TOKEN != null) {
         given()
                 .contentType(ContentType.CONTENT_TYPE)
                 .header(Authorization.AUTHORIZATION, Authorization.ACCESS_TOKEN)
                 .when()
-                .delete(Api.PATCH_USER);
-
+                .delete(Api.PATCH_USER);}
+        else {}
     }
 }

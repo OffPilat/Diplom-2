@@ -17,7 +17,7 @@ public class ListOrderTest {
     @Before
     public void setUp() {
         RestAssured.baseURI = Api.BASE_URL;
-        userClient.createUser();
+        userClient.successfulCreationUserWithBodyCheck();
     }
 
     @DisplayName("Тест на проверку API по получению списка заказа")

@@ -4,32 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea59402c-f043-4fca-be37-fa85b58039ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/OrderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/Api.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/Authorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/ContentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/client/CreationUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/client/EditUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/client/LoginUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/order/CreateOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/order/ListOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/createEmptyOrder.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/createInvalidOrder.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/createInvalidUser.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/createOrder.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/createUser.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/editUser.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/loginInvalidUser.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/loginUser.json" afterDir="false" />
+    <list default="true" id="ea59402c-f043-4fca-be37-fa85b58039ec" name="Changes" comment="add API-tests for stellarburgers.nomoreparties.site/api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/client/CreationUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/client/CreationUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/client/EditUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/client/EditUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/client/LoginUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/client/LoginUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/order/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/order/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/order/ListOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/order/ListOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/offpi/IdeaProjects/Diplom-2/src/test/java/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/offpi/IdeaProjects/Diplom-2&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -84,8 +67,8 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ListOrderTest.getOrderListNonAuthorizedUserTest">
-    <configuration name="CreateOrderTest.createOrderNonAuthorizedUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateOrderTest">
+    <configuration name="CreateOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom-2" />
       <extension name="coverage">
         <pattern>
@@ -95,83 +78,79 @@
       </extension>
       <option name="PACKAGE_NAME" value="order" />
       <option name="MAIN_CLASS_NAME" value="order.CreateOrderTest" />
-      <option name="METHOD_NAME" value="createOrderNonAuthorizedUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreationUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="client" />
+      <option name="MAIN_CLASS_NAME" value="client.CreationUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreationUserTest.createUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="client" />
+      <option name="MAIN_CLASS_NAME" value="client.CreationUserTest" />
+      <option name="METHOD_NAME" value="createUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateOrderTest.createOrderWithIngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EditUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="order.*" />
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="order" />
-      <option name="MAIN_CLASS_NAME" value="order.CreateOrderTest" />
-      <option name="METHOD_NAME" value="createOrderWithIngredientTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="client" />
+      <option name="MAIN_CLASS_NAME" value="client.EditUserTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateOrderTest.createOrderWithoutIngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom-2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="order.*" />
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="order" />
-      <option name="MAIN_CLASS_NAME" value="order.CreateOrderTest" />
-      <option name="METHOD_NAME" value="createOrderWithoutIngredientTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListOrderTest.getOrderListAuthorizedUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom-2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="order" />
-      <option name="MAIN_CLASS_NAME" value="order.ListOrderTest" />
-      <option name="METHOD_NAME" value="getOrderListAuthorizedUserTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListOrderTest.getOrderListNonAuthorizedUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom-2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="order" />
-      <option name="MAIN_CLASS_NAME" value="order.ListOrderTest" />
-      <option name="METHOD_NAME" value="getOrderListNonAuthorizedUserTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="client" />
+      <option name="MAIN_CLASS_NAME" value="client.LoginUserTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ListOrderTest.getOrderListNonAuthorizedUserTest" />
-        <item itemvalue="JUnit.ListOrderTest.getOrderListAuthorizedUserTest" />
-        <item itemvalue="JUnit.CreateOrderTest.createOrderWithoutIngredientTest" />
-        <item itemvalue="JUnit.CreateOrderTest.createOrderWithIngredientTest" />
-        <item itemvalue="JUnit.CreateOrderTest.createOrderNonAuthorizedUserTest" />
+        <item itemvalue="JUnit.CreateOrderTest" />
+        <item itemvalue="JUnit.LoginUserTest" />
+        <item itemvalue="JUnit.EditUserTest" />
+        <item itemvalue="JUnit.CreationUserTest" />
+        <item itemvalue="JUnit.CreationUserTest.createUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +163,14 @@
       <option name="presentableId" value="Default" />
       <updated>1705064492765</updated>
     </task>
+    <task id="LOCAL-00001" summary="add API-tests for stellarburgers.nomoreparties.site/api">
+      <created>1705235861916</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705235861916</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,5 +183,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add API-tests for stellarburgers.nomoreparties.site/api" />
+    <option name="LAST_COMMIT_MESSAGE" value="add API-tests for stellarburgers.nomoreparties.site/api" />
   </component>
 </project>
